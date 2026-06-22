@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>悟空体育 · 持续关注之所</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf9f7;
+            color: #2c2c2c;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", system-ui, sans-serif;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 2rem 1.25rem;
+        }
+
+        .container {
+            max-width: 660px;
+            margin: 0 auto;
+            width: 100%;
+            flex: 1;
+        }
+
+        /* 极简标题层级 */
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 350;
+            letter-spacing: 0.02em;
+            line-height: 1.3;
+            margin-bottom: 0.25rem;
+            color: #1a1a1a;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #767676;
+            font-weight: 400;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid #e5e3df;
+            padding-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 450;
+            margin-top: 2.8rem;
+            margin-bottom: 0.9rem;
+            color: #1e1e1e;
+            letter-spacing: 0.01em;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 430;
+            margin-top: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: #2b2b2b;
+        }
+
+        p {
+            margin-bottom: 1.3rem;
+            color: #3d3d3d;
+            font-weight: 380;
+        }
+
+        a {
+            color: #1f5f8f;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #1f5f8f;
+            color: #0d3b5e;
+        }
+
+        .intro-callout {
+            background: #f2efeb;
+            padding: 1.6rem 2rem;
+            border-radius: 20px;
+            margin: 2rem 0 2.5rem 0;
+        }
+
+        .intro-callout p {
+            margin-bottom: 0.5rem;
+            font-size: 0.98rem;
+        }
+
+        .intro-callout p:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            margin: 1.2rem 0 1.8rem 0;
+        }
+
+        .feature-item {
+            flex: 1 1 180px;
+            background: white;
+            padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.04);
+            border: 1px solid #edeae6;
+        }
+
+        .feature-item .label {
+            font-weight: 470;
+            font-size: 1.05rem;
+            margin-bottom: 0.3rem;
+            color: #1f1f1f;
+        }
+
+        .feature-item .desc {
+            font-size: 0.92rem;
+            color: #5f5f5f;
+            line-height: 1.5;
+        }
+
+        .usage-card {
+            background: white;
+            border-radius: 24px;
+            padding: 1.6rem 2rem;
+            border: 1px solid #eae6e0;
+            margin: 2rem 0 1.5rem 0;
+        }
+
+        .usage-card p {
+            margin-bottom: 0.9rem;
+        }
+
+        .faq-mini {
+            margin: 2.5rem 0 2rem 0;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd9d3;
+        }
+
+        .faq-mini details {
+            margin-bottom: 0.8rem;
+            border-bottom: 1px solid #efebe7;
+            padding-bottom: 0.6rem;
+        }
+
+        .faq-mini summary {
+            font-weight: 440;
+            color: #2d2d2d;
+            cursor: pointer;
+            padding: 0.2rem 0;
+            font-size: 1rem;
+        }
+
+        .faq-mini details p {
+            margin: 0.6rem 0 0.2rem 0;
+            font-size: 0.95rem;
+            color: #5a5a5a;
+        }
+
+        .note-soft {
+            background: #f5f3f0;
+            padding: 1.2rem 1.5rem;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            color: #4a4a4a;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .note-soft a {
+            font-weight: 430;
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e3dfd9;
+            font-size: 0.85rem;
+            color: #8a8884;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1.25rem 1rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .feature-grid {
+                flex-direction: column;
+            }
+            .intro-callout,
+            .usage-card {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>悟空体育</h1>
+    <div class="subhead">再次回访 · 收藏 · 持续关注</div>
+
+    <p>
+        有些信息值得反复打量，有些动向需要长久留意。如果你曾对体育内容保持好奇，或许已经留意到一处安静的角落——<a href="https://cn-web-wukong.com">悟空体育</a>。
+        这里没有喧嚣的推送，只有经过沉淀的赛事记录、规则解读与运动文化侧写。每次回来，都能找到上次没看完的段落，也会发现新添的视角。
+    </p>
+
+    <div class="intro-callout">
+        <p><strong>摘要</strong> —— 一个以内容为锚点的体育信息站点。不追逐即时热榜，不堆砌数据流，而是把每项运动、每段故事当作值得慢慢翻阅的篇章。从竞技规则到民间赛事，从装备演变到人物侧写，材料扎实，语调平实。</p>
+        <p>适合想要避开信息过载、却又不愿错过核心脉络的阅读者。常来常新，收藏即重逢。</p>
+    </div>
+
+    <h2>值得留意的几个切面</h2>
+    <div class="feature-grid">
+        <div class="feature-item">
+            <div class="label">📋 规则深读</div>
+            <div class="desc">不只是一张赛程表。判罚逻辑、历史修订、各地变体，用清晰的叙述把规则讲透。</div>
+        </div>
+        <div class="feature-item">
+            <div class="label">🏸 运动人物</div>
+            <div class="desc">不聚焦八卦，而是关注训练哲学、职业生涯的转折，以及他们如何看待输赢。</div>
+        </div>
+        <div class="feature-item">
+            <div class="label">🧭 场景索引</div>
+            <div class="desc">按运动项目、年代、地区列出专题，方便反复查阅，也适合收藏后慢慢探索。</div>
+        </div>
+    </div>
+
+    <h2>使用与收藏的节奏</h2>
+    <div class="usage-card">
+        <p><strong>第一次来访 ·</strong> 推荐从「热门内容」或「最近更新」入手，感受叙述风格。只用几分钟就能判断是否合拍。</p>
+        <p><strong>再次回访 ·</strong> 浏览器书签或收藏夹里留一个位置就好。内容更新不密集，但每次都有分量；适合周末或安静时段打开，一篇一篇读。</p>
+        <p><strong>持续关注 ·</strong> 不需要每日刷新。关注站内话题的延伸，你会发现同一个赛事在不同年份有完全不同的讲述。这也是收藏它的意义。</p>
+    </div>
+
+    <h3>一些朴素的提醒</h3>
+    <p>
+        站点内容均由作者梳理编写，力求准确，但体育规则、数据与纪录时有更新，若需用于严肃决策或引用，建议多方核对。<a href="https://cn-web-wukong.com">悟空体育</a> 本身保持小而美的节奏，不接入第三方广告，也没有弹窗或自动播放。
+        你可以安心浏览，也欢迎把这里当作一个可信任的体育内容书签。
+    </p>
+
+    <div class="faq-mini">
+        <details>
+            <summary>内容更新频率如何？会提前通知吗？</summary>
+            <p>不定期更新，通常每月 2–4 篇。没有邮件订阅，也不设推送提醒——更希望是你主动回来时恰好遇见新内容。关注站内「最近更新」列表即可。</p>
+        </details>
+        <details>
+            <summary>想查找某个特定运动或年代的内容，怎么找？</summary>
+            <p>首页设有分类索引（项目 / 年代 / 专题），每个分类下按时间倒序排列。也可以直接使用站内搜索框（位于右上角），支持关键词查找。</p>
+        </details>
+        <details>
+            <summary>内容可以转载或引用吗？</summary>
+            <p>个人学习、非商业引用请注明出处（标明 <a href="https://cn-web-wukong.com">悟空体育</a> 即可）。其他用途请通过站内联系页面沟通，通常都能得到及时回复。</p>
+        </details>
+    </div>
+
+    <div class="note-soft">
+        🌱 常回来看看 · 收藏即重逢 · 这里是一直在更新的 <a href="https://cn-web-wukong.com">悟空体育</a>
+    </div>
+
+    <footer>
+        © 悟空体育 · 内容页面 · 持续生长
+    </footer>
+</div>
+</body>
+</html>
